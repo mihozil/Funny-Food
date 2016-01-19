@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreen">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGroundBlack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-Pi-KlU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KG-We-qt9">
+                    <rect key="frame" x="28" y="148" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="UIv-xf-0jh"/>
+                        <constraint firstAttribute="height" constant="70" id="cse-wH-I60"/>
+                    </constraints>
+                    <state key="normal" image="birthday.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="birthdayButton:" destination="-1" eventType="touchUpInside" id="Lp6-GQ-bcc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc9-B1-72G">
+                    <rect key="frame" x="125" y="148" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Gen-Yq-qe4"/>
+                        <constraint firstAttribute="width" constant="70" id="uOP-EU-nYA"/>
+                    </constraints>
+                    <state key="normal" image="bread.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="breadButton:" destination="-1" eventType="touchUpInside" id="qhz-oM-Rzl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-QJ-8an">
+                    <rect key="frame" x="222" y="148" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="puM-By-RsG"/>
+                        <constraint firstAttribute="width" constant="70" id="tzH-pv-1fp"/>
+                    </constraints>
+                    <state key="normal" image="cookie.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cookiesButton:" destination="-1" eventType="touchUpInside" id="pbe-VV-G16"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWw-4T-etu">
+                    <rect key="frame" x="64" y="261" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="HLg-q2-xaB"/>
+                        <constraint firstAttribute="height" constant="70" id="YrX-nb-eJJ"/>
+                    </constraints>
+                    <state key="normal" image="Drink.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="drinkButton:" destination="-1" eventType="touchUpInside" id="1xc-UE-NeV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4L-FM-ij8">
+                    <rect key="frame" x="181" y="261" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="gVe-vI-1o5"/>
+                        <constraint firstAttribute="width" constant="70" id="sF4-fp-bye"/>
+                    </constraints>
+                    <state key="normal" image="iceCream.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="creamButton:" destination="-1" eventType="touchUpInside" id="yYN-FU-Gby"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phU-g7-iP3">
+                    <rect key="frame" x="31" y="226" width="65" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bread" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYC-5z-5R0">
+                    <rect key="frame" x="137" y="226" width="46" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.98475747810846703" blue="0.97701012001252374" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODB-qI-hUF">
+                    <rect key="frame" x="237" y="226" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.9492651742729965" green="0.94967713647959184" blue="0.93147253737529911" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCy-GU-3W0">
+                    <rect key="frame" x="79" y="339" width="41" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.94697438057896044" green="0.934795086971273" blue="0.95182955994897955" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cream" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3W-8a-VoU">
+                    <rect key="frame" x="177" y="339" width="79" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.95182955994897955" green="0.9424140251233849" blue="0.93704021610306365" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iLS-Pi-KlU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2hR-T4-SOG"/>
+                <constraint firstItem="BJG-QJ-8an" firstAttribute="leading" secondItem="Dc9-B1-72G" secondAttribute="trailing" constant="27" id="47e-uS-EgN"/>
+                <constraint firstItem="4KG-We-qt9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="148" id="4Q7-Ep-lPl"/>
+                <constraint firstItem="v3W-8a-VoU" firstAttribute="top" secondItem="B4L-FM-ij8" secondAttribute="bottom" constant="8" id="70D-al-n50"/>
+                <constraint firstItem="Dc9-B1-72G" firstAttribute="leading" secondItem="4KG-We-qt9" secondAttribute="trailing" constant="27" id="C4R-Sq-zFH"/>
+                <constraint firstItem="nYC-5z-5R0" firstAttribute="leading" secondItem="phU-g7-iP3" secondAttribute="trailing" constant="41" id="CII-4t-qza"/>
+                <constraint firstAttribute="trailing" secondItem="iLS-Pi-KlU" secondAttribute="trailing" id="F5q-7h-kxh"/>
+                <constraint firstItem="ODB-qI-hUF" firstAttribute="top" secondItem="BJG-QJ-8an" secondAttribute="bottom" constant="8" id="G8p-dQ-INJ"/>
+                <constraint firstItem="B4L-FM-ij8" firstAttribute="top" secondItem="ODB-qI-hUF" secondAttribute="bottom" constant="14" id="GsY-Sp-BUB"/>
+                <constraint firstItem="iLS-Pi-KlU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jke-9y-14I"/>
+                <constraint firstAttribute="centerX" secondItem="Dc9-B1-72G" secondAttribute="centerX" id="K7t-nD-jtJ"/>
+                <constraint firstItem="BJG-QJ-8an" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="148" id="Lff-NL-xcM"/>
+                <constraint firstItem="JCy-GU-3W0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="79" id="MtI-BN-c1n"/>
+                <constraint firstItem="MWw-4T-etu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="PX0-3n-2PP"/>
+                <constraint firstItem="phU-g7-iP3" firstAttribute="top" secondItem="4KG-We-qt9" secondAttribute="bottom" constant="8" id="UPH-MM-8jD"/>
+                <constraint firstAttribute="centerX" secondItem="nYC-5z-5R0" secondAttribute="centerX" id="VBi-bi-KdN"/>
+                <constraint firstAttribute="trailing" secondItem="v3W-8a-VoU" secondAttribute="trailing" constant="64" id="VIX-hj-Pm7"/>
+                <constraint firstItem="Dc9-B1-72G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="148" id="Y71-dC-7Ld"/>
+                <constraint firstItem="JCy-GU-3W0" firstAttribute="top" secondItem="MWw-4T-etu" secondAttribute="bottom" constant="8" id="Yk4-8g-QZb"/>
+                <constraint firstAttribute="bottom" secondItem="iLS-Pi-KlU" secondAttribute="bottom" id="Zcf-Pp-oxm"/>
+                <constraint firstItem="MWw-4T-etu" firstAttribute="top" secondItem="phU-g7-iP3" secondAttribute="bottom" constant="14" id="bnW-jW-Za2"/>
+                <constraint firstAttribute="trailing" secondItem="B4L-FM-ij8" secondAttribute="trailing" constant="69" id="eRE-br-fhC"/>
+                <constraint firstItem="ODB-qI-hUF" firstAttribute="leading" secondItem="nYC-5z-5R0" secondAttribute="trailing" constant="54" id="tQj-ld-BTG"/>
+                <constraint firstItem="nYC-5z-5R0" firstAttribute="top" secondItem="Dc9-B1-72G" secondAttribute="bottom" constant="8" id="w0a-6e-PHp"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Drink.png" width="111" height="111"/>
+        <image name="backGroundBlack.jpg" width="640" height="1136"/>
+        <image name="birthday.png" width="214" height="208"/>
+        <image name="bread.png" width="80" height="80"/>
+        <image name="cookie.png" width="80" height="80"/>
+        <image name="iceCream.png" width="80" height="80"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

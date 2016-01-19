@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>price</key>
+	<array>
+		<string>12$</string>
+		<string>22$</string>
+		<string>12$</string>
+		<string>52$</string>
+		<string>23$</string>
+		<string>32$</string>
+		<string>31$</string>
+		<string>13$</string>
+	</array>
+	<key>foodname</key>
+	<array>
+		<string>Cookies 1</string>
+		<string>Cookies 2</string>
+		<string>Cookies 3</string>
+		<string>Cookies 4</string>
+		<string>Cookies 5</string>
+		<string>Cookies 6</string>
+		<string>Cookies 7</string>
+		<string>Cookies 8</string>
+	</array>
+	<key>sales</key>
+	<array>
+		<string>10%</string>
+		<string>22%</string>
+		<string>21%</string>
+		<string>3%</string>
+		<string>32%</string>
+		<string>55%</string>
+		<string>44%</string>
+		<string>32%</string>
+	</array>
+</dict>
+</plist>

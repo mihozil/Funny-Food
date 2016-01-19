@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "About.h"
+#import "Adress.h"
+#import "SaleOff.h"
+#import "MainScreen.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    MainScreen*mainScreen = [[MainScreen alloc]initWithNibName:@"MainScreen" bundle:nil];
+    UINavigationController* naviMainScreen = [[UINavigationController alloc]initWithRootViewController:mainScreen];
+    naviMainScreen.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Main Menu" image:[UIImage imageNamed:@"menuWhite.png"] selectedImage:[UIImage imageNamed:@"menuWhite.png"]];
+    mainScreen.title = @"Main Menu";
+    
+    
+    SaleOff*saleoff = [[SaleOff alloc] init];
+    UINavigationController*navSaleOff = [[UINavigationController alloc]initWithRootViewController:saleoff];
+    navSaleOff.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Sale Off" image:[UIImage imageNamed:@"sale.png"] selectedImage:[UIImage imageNamed:@"sale.png"]];
+    saleoff.title = @"Sale Off";
+    
+    Adress*adress = [[Adress alloc]init];
+    UINavigationController*navAdress = [[UINavigationController alloc]initWithRootViewController:adress];
+    navAdress.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Adress" image:[UIImage imageNamed:@"shopWhite2.png"] selectedImage:[UIImage imageNamed:@"shopWhite2.png"]];
+    adress.title = @"Adress";
+    
+    About*about = [[About alloc]init];
+    UINavigationController*navAbout = [[UINavigationController alloc]initWithRootViewController:about];
+    navAbout.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"About" image:[UIImage imageNamed:@"aboutWhite.png"] selectedImage:[UIImage imageNamed:@"aboutWhite.png"]];
+    about.title = @"About";
+    
+    UITabBarController*tabbarcontroller = [[UITabBarController alloc]init];
+    tabbarcontroller.viewControllers = [NSArray arrayWithObjects:naviMainScreen,navSaleOff, navAdress, navAbout, nil];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.rootViewController = tabbarcontroller;
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

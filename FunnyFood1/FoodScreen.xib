@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoodScreen">
+            <connections>
+                <outlet property="imgLarge" destination="rHd-4X-WY7" id="8Tq-4V-f1n"/>
+                <outlet property="nameLabel" destination="WoM-wp-VLB" id="fA8-i5-a0l"/>
+                <outlet property="priceLabel" destination="DYc-Jg-i3h" id="iLI-p3-s3T"/>
+                <outlet property="saleLabel" destination="os7-tE-6Ob" id="M7a-qB-2Yv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGroundBlack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-vr-hp6">
+                    <rect key="frame" x="-7" y="0.0" width="334" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rHd-4X-WY7">
+                    <rect key="frame" x="25" y="15" width="270" height="247"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="Z8Q-rt-kTy"/>
+                        <constraint firstAttribute="height" constant="247" id="xTg-w3-CtO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-Jg-i3h">
+                    <rect key="frame" x="131" y="385" width="58" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="0.29619626104378005" green="0.99593067261382406" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os7-tE-6Ob">
+                    <rect key="frame" x="117" y="440" width="87" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="1" green="0.23538523652200716" blue="0.30134675517822929" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-wp-VLB">
+                    <rect key="frame" x="83" y="313" width="155" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3Yo-vr-hp6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0gS-h0-s8v"/>
+                <constraint firstItem="os7-tE-6Ob" firstAttribute="top" secondItem="DYc-Jg-i3h" secondAttribute="bottom" constant="23" id="6n9-Qe-ynb"/>
+                <constraint firstItem="DYc-Jg-i3h" firstAttribute="top" secondItem="WoM-wp-VLB" secondAttribute="bottom" constant="36" id="823-hf-xmp"/>
+                <constraint firstItem="WoM-wp-VLB" firstAttribute="top" secondItem="rHd-4X-WY7" secondAttribute="bottom" constant="51" id="Cav-NI-rxq"/>
+                <constraint firstAttribute="centerX" secondItem="os7-tE-6Ob" secondAttribute="centerX" id="Du7-iC-csb"/>
+                <constraint firstAttribute="trailing" secondItem="3Yo-vr-hp6" secondAttribute="trailing" constant="-7" id="N5T-6z-EUK"/>
+                <constraint firstItem="3Yo-vr-hp6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-7" id="SUh-gR-Crk"/>
+                <constraint firstItem="rHd-4X-WY7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="a8J-YK-H5O"/>
+                <constraint firstAttribute="centerX" secondItem="WoM-wp-VLB" secondAttribute="centerX" id="dgS-yd-kHJ"/>
+                <constraint firstAttribute="bottom" secondItem="3Yo-vr-hp6" secondAttribute="bottom" id="giP-aZ-f1l"/>
+                <constraint firstAttribute="centerX" secondItem="DYc-Jg-i3h" secondAttribute="centerX" id="iyo-NG-S7x"/>
+                <constraint firstAttribute="centerX" secondItem="rHd-4X-WY7" secondAttribute="centerX" id="t56-uq-biu"/>
+            </constraints>
+            <point key="canvasLocation" x="161" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backGroundBlack.jpg" width="640" height="1136"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
